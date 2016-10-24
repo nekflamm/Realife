@@ -15,6 +15,13 @@
 		0A0F3E651DBC14FA00F8A21D /* RealifeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0F3E641DBC14FA00F8A21D /* RealifeTests.swift */; };
 		0A0F3E701DBC14FA00F8A21D /* RealifeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0F3E6F1DBC14FA00F8A21D /* RealifeUITests.swift */; };
 		0A0F3E7E1DBC150900F8A21D /* StarReview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0F3E7D1DBC150900F8A21D /* StarReview.swift */; };
+		277684361DBE097500B78153 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 277684351DBE097500B78153 /* GoogleService-Info.plist */; };
+		27F72CC41DBE2D1F00602CBC /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27F72CC31DBE2D1F00602CBC /* FBSDKCoreKit.framework */; };
+		27F72CC61DBE2D2200602CBC /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27F72CC51DBE2D2200602CBC /* FBSDKLoginKit.framework */; };
+		27F72CC81DBE2E6700602CBC /* Authentification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F72CC71DBE2E6700602CBC /* Authentification.swift */; };
+		6AE7B6CA7B9422C74770089A /* Pods_Realife.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB0131ECA387E5B9DC079C4F /* Pods_Realife.framework */; };
+		B6D2AAEF1508941CF52D1E91 /* Pods_RealifeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37C1108E458E240BA151EA66 /* Pods_RealifeUITests.framework */; };
+		C9F205F028580D6F4B4BCCA3 /* Pods_RealifeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D542682C96D5EA2D0025C6B /* Pods_RealifeTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +56,20 @@
 		0A0F3E6F1DBC14FA00F8A21D /* RealifeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealifeUITests.swift; sourceTree = "<group>"; };
 		0A0F3E711DBC14FA00F8A21D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0A0F3E7D1DBC150900F8A21D /* StarReview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StarReview.swift; sourceTree = "<group>"; };
+		277684351DBE097500B78153 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		27F72CC31DBE2D1F00602CBC /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = "Pods/../build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework"; sourceTree = "<group>"; };
+		27F72CC51DBE2D2200602CBC /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = "../../Library/Developer/Xcode/DerivedData/Realife-debnqdnlvpqxoydlnctaioohfhon/Build/Products/Debug-iphonesimulator/FBSDKLoginKit/FBSDKLoginKit.framework"; sourceTree = "<group>"; };
+		27F72CC71DBE2E6700602CBC /* Authentification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Authentification.swift; sourceTree = "<group>"; };
+		27F72CC91DBE43E100602CBC /* Realife.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Realife.entitlements; sourceTree = "<group>"; };
+		37C1108E458E240BA151EA66 /* Pods_RealifeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RealifeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		38B1E8A0291315856F39DB08 /* Pods-RealifeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RealifeTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RealifeTests/Pods-RealifeTests.debug.xcconfig"; sourceTree = "<group>"; };
+		3F4AA08772B8B633026D8F7C /* Pods-RealifeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RealifeUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RealifeUITests/Pods-RealifeUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		4D542682C96D5EA2D0025C6B /* Pods_RealifeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RealifeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A4B9E2A1B4B7826CAD64B91 /* Pods-Realife.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Realife.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Realife/Pods-Realife.debug.xcconfig"; sourceTree = "<group>"; };
+		A084BFDDA320D83C1F9282D2 /* Pods-RealifeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RealifeTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RealifeTests/Pods-RealifeTests.release.xcconfig"; sourceTree = "<group>"; };
+		AB0131ECA387E5B9DC079C4F /* Pods_Realife.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Realife.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD32389B42D9152C3038F178 /* Pods-Realife.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Realife.release.xcconfig"; path = "Pods/Target Support Files/Pods-Realife/Pods-Realife.release.xcconfig"; sourceTree = "<group>"; };
+		E862C5DA263BF6C33432EFCD /* Pods-RealifeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RealifeUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RealifeUITests/Pods-RealifeUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +77,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27F72CC61DBE2D2200602CBC /* FBSDKLoginKit.framework in Frameworks */,
+				27F72CC41DBE2D1F00602CBC /* FBSDKCoreKit.framework in Frameworks */,
+				6AE7B6CA7B9422C74770089A /* Pods_Realife.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +87,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9F205F028580D6F4B4BCCA3 /* Pods_RealifeTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +95,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6D2AAEF1508941CF52D1E91 /* Pods_RealifeUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,10 +105,13 @@
 		0A0F3E431DBC14FA00F8A21D = {
 			isa = PBXGroup;
 			children = (
+				277684351DBE097500B78153 /* GoogleService-Info.plist */,
 				0A0F3E4E1DBC14FA00F8A21D /* Realife */,
 				0A0F3E631DBC14FA00F8A21D /* RealifeTests */,
 				0A0F3E6E1DBC14FA00F8A21D /* RealifeUITests */,
 				0A0F3E4D1DBC14FA00F8A21D /* Products */,
+				6CE0C7AF6E9B4C479CD937D6 /* Pods */,
+				7082A8B82147B0630C130475 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,10 +128,12 @@
 		0A0F3E4E1DBC14FA00F8A21D /* Realife */ = {
 			isa = PBXGroup;
 			children = (
+				27F72CC91DBE43E100602CBC /* Realife.entitlements */,
 				0A0F3E4F1DBC14FA00F8A21D /* AppDelegate.swift */,
 				0A0F3E7D1DBC150900F8A21D /* StarReview.swift */,
 				0A0F3E511DBC14FA00F8A21D /* ViewController.swift */,
 				0A0F3E531DBC14FA00F8A21D /* Main.storyboard */,
+				27F72CC71DBE2E6700602CBC /* Authentification.swift */,
 				0A0F3E561DBC14FA00F8A21D /* Assets.xcassets */,
 				0A0F3E581DBC14FA00F8A21D /* LaunchScreen.storyboard */,
 				0A0F3E5B1DBC14FA00F8A21D /* Info.plist */,
@@ -128,6 +159,31 @@
 			path = RealifeUITests;
 			sourceTree = "<group>";
 		};
+		6CE0C7AF6E9B4C479CD937D6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8A4B9E2A1B4B7826CAD64B91 /* Pods-Realife.debug.xcconfig */,
+				BD32389B42D9152C3038F178 /* Pods-Realife.release.xcconfig */,
+				38B1E8A0291315856F39DB08 /* Pods-RealifeTests.debug.xcconfig */,
+				A084BFDDA320D83C1F9282D2 /* Pods-RealifeTests.release.xcconfig */,
+				3F4AA08772B8B633026D8F7C /* Pods-RealifeUITests.debug.xcconfig */,
+				E862C5DA263BF6C33432EFCD /* Pods-RealifeUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		7082A8B82147B0630C130475 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				27F72CC51DBE2D2200602CBC /* FBSDKLoginKit.framework */,
+				27F72CC31DBE2D1F00602CBC /* FBSDKCoreKit.framework */,
+				AB0131ECA387E5B9DC079C4F /* Pods_Realife.framework */,
+				4D542682C96D5EA2D0025C6B /* Pods_RealifeTests.framework */,
+				37C1108E458E240BA151EA66 /* Pods_RealifeUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +191,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0A0F3E741DBC14FA00F8A21D /* Build configuration list for PBXNativeTarget "Realife" */;
 			buildPhases = (
+				C9F2B1E9E53D824CF0F4CDFB /* [CP] Check Pods Manifest.lock */,
 				0A0F3E481DBC14FA00F8A21D /* Sources */,
 				0A0F3E491DBC14FA00F8A21D /* Frameworks */,
 				0A0F3E4A1DBC14FA00F8A21D /* Resources */,
+				E11D181B3E1F2AAE05DA8B35 /* [CP] Embed Pods Frameworks */,
+				5F242803B414804332A1F0AF /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -152,9 +211,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0A0F3E771DBC14FA00F8A21D /* Build configuration list for PBXNativeTarget "RealifeTests" */;
 			buildPhases = (
+				6971FC31506C21AD17740A90 /* [CP] Check Pods Manifest.lock */,
 				0A0F3E5C1DBC14FA00F8A21D /* Sources */,
 				0A0F3E5D1DBC14FA00F8A21D /* Frameworks */,
 				0A0F3E5E1DBC14FA00F8A21D /* Resources */,
+				6B81622B46D08242F6DBD270 /* [CP] Embed Pods Frameworks */,
+				D01FC5F2D7E53DADBFA2576D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -170,9 +232,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0A0F3E7A1DBC14FA00F8A21D /* Build configuration list for PBXNativeTarget "RealifeUITests" */;
 			buildPhases = (
+				FB0C466D03E36F28E73FAAFD /* [CP] Check Pods Manifest.lock */,
 				0A0F3E671DBC14FA00F8A21D /* Sources */,
 				0A0F3E681DBC14FA00F8A21D /* Frameworks */,
 				0A0F3E691DBC14FA00F8A21D /* Resources */,
+				10B53BED3EE3022F9D4BE7A2 /* [CP] Embed Pods Frameworks */,
+				36C74A7E64B5E54FA1CE38AC /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -196,8 +261,13 @@
 				TargetAttributes = {
 					0A0F3E4B1DBC14FA00F8A21D = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = C2R5QEKN74;
+						DevelopmentTeam = 675QXTVWJK;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
 					};
 					0A0F3E5F1DBC14FA00F8A21D = {
 						CreatedOnToolsVersion = 8.0;
@@ -236,6 +306,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				277684361DBE097500B78153 /* GoogleService-Info.plist in Resources */,
 				0A0F3E5A1DBC14FA00F8A21D /* LaunchScreen.storyboard in Resources */,
 				0A0F3E571DBC14FA00F8A21D /* Assets.xcassets in Resources */,
 				0A0F3E551DBC14FA00F8A21D /* Main.storyboard in Resources */,
@@ -258,11 +329,150 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		10B53BED3EE3022F9D4BE7A2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RealifeUITests/Pods-RealifeUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		36C74A7E64B5E54FA1CE38AC /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RealifeUITests/Pods-RealifeUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5F242803B414804332A1F0AF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Realife/Pods-Realife-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6971FC31506C21AD17740A90 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		6B81622B46D08242F6DBD270 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RealifeTests/Pods-RealifeTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C9F2B1E9E53D824CF0F4CDFB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D01FC5F2D7E53DADBFA2576D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RealifeTests/Pods-RealifeTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E11D181B3E1F2AAE05DA8B35 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Realife/Pods-Realife-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FB0C466D03E36F28E73FAAFD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		0A0F3E481DBC14FA00F8A21D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27F72CC81DBE2E6700602CBC /* Authentification.swift in Sources */,
 				0A0F3E521DBC14FA00F8A21D /* ViewController.swift in Sources */,
 				0A0F3E7E1DBC150900F8A21D /* StarReview.swift in Sources */,
 				0A0F3E501DBC14FA00F8A21D /* AppDelegate.swift in Sources */,
@@ -413,10 +623,21 @@
 		};
 		0A0F3E751DBC14FA00F8A21D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8A4B9E2A1B4B7826CAD64B91 /* Pods-Realife.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Realife/Realife.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = C2R5QEKN74;
+				DEVELOPMENT_TEAM = 675QXTVWJK;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/FirebaseAnalytics/Frameworks/frameworks\"",
+					"\"${PODS_ROOT}/FirebaseInstanceID/Frameworks/frameworks\"",
+					"\"${PODS_ROOT}/GoogleInterchangeUtilities/Frameworks\"",
+					"\"${PODS_ROOT}/GoogleSymbolUtilities/Frameworks\"",
+					"\"${PODS_ROOT}/GoogleUtilities/Frameworks\"",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/FBSDKCoreKit",
+				);
 				INFOPLIST_FILE = Realife/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sneakycorp.Realife;
@@ -429,10 +650,21 @@
 		};
 		0A0F3E761DBC14FA00F8A21D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BD32389B42D9152C3038F178 /* Pods-Realife.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Realife/Realife.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = C2R5QEKN74;
+				DEVELOPMENT_TEAM = 675QXTVWJK;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/FirebaseAnalytics/Frameworks/frameworks\"",
+					"\"${PODS_ROOT}/FirebaseInstanceID/Frameworks/frameworks\"",
+					"\"${PODS_ROOT}/GoogleInterchangeUtilities/Frameworks\"",
+					"\"${PODS_ROOT}/GoogleSymbolUtilities/Frameworks\"",
+					"\"${PODS_ROOT}/GoogleUtilities/Frameworks\"",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/FBSDKCoreKit",
+				);
 				INFOPLIST_FILE = Realife/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sneakycorp.Realife;
@@ -445,6 +677,7 @@
 		};
 		0A0F3E781DBC14FA00F8A21D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 38B1E8A0291315856F39DB08 /* Pods-RealifeTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -459,6 +692,7 @@
 		};
 		0A0F3E791DBC14FA00F8A21D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A084BFDDA320D83C1F9282D2 /* Pods-RealifeTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -473,6 +707,7 @@
 		};
 		0A0F3E7B1DBC14FA00F8A21D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3F4AA08772B8B633026D8F7C /* Pods-RealifeUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = RealifeUITests/Info.plist;
@@ -486,6 +721,7 @@
 		};
 		0A0F3E7C1DBC14FA00F8A21D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E862C5DA263BF6C33432EFCD /* Pods-RealifeUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = RealifeUITests/Info.plist;

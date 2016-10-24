@@ -45,8 +45,6 @@ class Authentification: UIViewController, FBSDKLoginButtonDelegate {
             var name = user?.displayName
             let email = user?.email
             let photoUrl = user?.photoURL
-            
-            // Still have to check if it exists in db
 
             if (name != nil && email != nil && photoUrl != nil) {
 
@@ -69,11 +67,20 @@ class Authentification: UIViewController, FBSDKLoginButtonDelegate {
                     firstName = name!.substring(to: name!.index(name!.startIndex, offsetBy : lastSpacePosition))
                 }
 
-                let newUser = ["email": email!, "lastName": lastName, "firstName": firstName, "mark": 5, "photoUrl": photoUrl!.absoluteString, "localisation": "N.C."] as [String : Any]
-                let firebaseNewUser = self.ref.childByAutoId()
-                firebaseNewUser.setValue(newUser)
-            }
+                self.ref.queryOrdered(byChild: "email").queryEqual(toValue: email)
+                    .observe(.value, with: { snapshot in
+                        
+                        if (snapshot.value is NSNull) {
+                            let newUser = ["email": email!, "lastName": lastName, "firstName": firstName, "mark": 5, "photoUrl": photoUrl!.absoluteString, "localisation": "N.C."] as [String : Any]
+                            let firebaseNewUser = self.ref.childByAutoId()
+                            firebaseNewUser.setValue(newUser)
+                        } else {
+                            let new_vc = self.storyboard?.instantiateViewController(withIdentifier: "MainScreen") as! ViewController
+                            self.navigationController?.pushViewController(new_vc, animated: true)
+                        }
+                })
             
+            }
         }
     }
 

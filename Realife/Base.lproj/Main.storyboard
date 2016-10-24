@@ -21,7 +21,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mgG-VG-3J4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1066" y="-570"/>
+            <point key="canvasLocation" x="-1226" y="-590"/>
         </scene>
         <!--Authentification-->
         <scene sceneID="oON-Mi-3a1">
@@ -50,16 +50,17 @@
                     <navigationItem key="navigationItem" id="LfK-KH-VIC"/>
                     <connections>
                         <outlet property="loginFB" destination="73N-rt-bme" id="hAc-1f-cQu"/>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="SwitchToMainScreen" id="O1N-Wa-PuV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="w8e-Cp-q78" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-210.40000000000001" y="-571.66416791604206"/>
+            <point key="canvasLocation" x="137" y="-590"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Realife" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MainScreen" id="BYZ-38-t0r" customClass="ViewController" customModule="Realife" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>

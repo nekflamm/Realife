@@ -14,6 +14,7 @@
 		0A0F3E5A1DBC14FA00F8A21D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A0F3E581DBC14FA00F8A21D /* LaunchScreen.storyboard */; };
 		0A0F3E651DBC14FA00F8A21D /* RealifeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0F3E641DBC14FA00F8A21D /* RealifeTests.swift */; };
 		0A0F3E701DBC14FA00F8A21D /* RealifeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0F3E6F1DBC14FA00F8A21D /* RealifeUITests.swift */; };
+		0A0F3E7E1DBC150900F8A21D /* StarReview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0F3E7D1DBC150900F8A21D /* StarReview.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		0A0F3E6B1DBC14FA00F8A21D /* RealifeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RealifeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A0F3E6F1DBC14FA00F8A21D /* RealifeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealifeUITests.swift; sourceTree = "<group>"; };
 		0A0F3E711DBC14FA00F8A21D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0A0F3E7D1DBC150900F8A21D /* StarReview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StarReview.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				0A0F3E4F1DBC14FA00F8A21D /* AppDelegate.swift */,
+				0A0F3E7D1DBC150900F8A21D /* StarReview.swift */,
 				0A0F3E511DBC14FA00F8A21D /* ViewController.swift */,
 				0A0F3E531DBC14FA00F8A21D /* Main.storyboard */,
 				0A0F3E561DBC14FA00F8A21D /* Assets.xcassets */,
@@ -193,6 +196,7 @@
 				TargetAttributes = {
 					0A0F3E4B1DBC14FA00F8A21D = {
 						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = C2R5QEKN74;
 						ProvisioningStyle = Automatic;
 					};
 					0A0F3E5F1DBC14FA00F8A21D = {
@@ -260,6 +264,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0A0F3E521DBC14FA00F8A21D /* ViewController.swift in Sources */,
+				0A0F3E7E1DBC150900F8A21D /* StarReview.swift in Sources */,
 				0A0F3E501DBC14FA00F8A21D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -410,10 +415,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = C2R5QEKN74;
 				INFOPLIST_FILE = Realife/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sneakycorp.Realife;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -422,10 +431,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = C2R5QEKN74;
 				INFOPLIST_FILE = Realife/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sneakycorp.Realife;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -503,6 +516,7 @@
 				0A0F3E761DBC14FA00F8A21D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0A0F3E771DBC14FA00F8A21D /* Build configuration list for PBXNativeTarget "RealifeTests" */ = {
 			isa = XCConfigurationList;
@@ -511,6 +525,7 @@
 				0A0F3E791DBC14FA00F8A21D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0A0F3E7A1DBC14FA00F8A21D /* Build configuration list for PBXNativeTarget "RealifeUITests" */ = {
 			isa = XCConfigurationList;
@@ -519,6 +534,7 @@
 				0A0F3E7C1DBC14FA00F8A21D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

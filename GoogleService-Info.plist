@@ -7,21 +7,21 @@
 	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
 	<string>ca-app-pub-3940256099942544/4411468910</string>
 	<key>CLIENT_ID</key>
-	<string>140094899923-oaj9t9mt711kj4uflj6vrth6pkkn7qds.apps.googleusercontent.com</string>
+	<string>597539029756-sv3o3nhu46qmv4hi30nr9f36ar6b11di.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.140094899923-oaj9t9mt711kj4uflj6vrth6pkkn7qds</string>
+	<string>com.googleusercontent.apps.597539029756-sv3o3nhu46qmv4hi30nr9f36ar6b11di</string>
 	<key>API_KEY</key>
-	<string>AIzaSyAI3Kehy_tbvp52CcpzvTEzX7665KyeDZ0</string>
+	<string>AIzaSyA1cENi4bFkrtPQrmGf2ygj6yVg7gLsc9Y</string>
 	<key>GCM_SENDER_ID</key>
-	<string>140094899923</string>
+	<string>597539029756</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>com.sneakycorp.Realife</string>
+	<string>com.realcorp.Realife</string>
 	<key>PROJECT_ID</key>
-	<string>realife-555d0</string>
+	<string>realife-10512</string>
 	<key>STORAGE_BUCKET</key>
-	<string>realife-555d0.appspot.com</string>
+	<string>realife-10512.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
 	<true/>
 	<key>IS_ANALYTICS_ENABLED</key>
@@ -33,8 +33,8 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true/>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:140094899923:ios:938d41082e84f762</string>
+	<string>1:597539029756:ios:9130500610c8a442</string>
 	<key>DATABASE_URL</key>
-	<string>https://realife-555d0.firebaseio.com</string>
+	<string>https://realife-10512.firebaseio.com</string>
 </dict>
 </plist>

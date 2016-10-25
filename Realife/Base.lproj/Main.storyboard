@@ -50,12 +50,78 @@
                     <navigationItem key="navigationItem" id="LfK-KH-VIC"/>
                     <connections>
                         <outlet property="loginFB" destination="73N-rt-bme" id="hAc-1f-cQu"/>
-                        <segue destination="BYZ-38-t0r" kind="show" identifier="SwitchToMainScreen" id="O1N-Wa-PuV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="w8e-Cp-q78" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="137" y="-590"/>
+        </scene>
+        <!--Settings-->
+        <scene sceneID="Sea-JH-MvH">
+            <objects>
+                <viewController storyboardIdentifier="Settings" id="RDv-gX-1Ew" customClass="Settings" customModule="Realife" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="L8q-Fb-4Fa"/>
+                        <viewControllerLayoutGuide type="bottom" id="iX3-wC-tJm"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="B4S-W0-6Bf">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="vC1-6A-fJx">
+                                <frame key="frameInset" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="regis" translatesAutoresizingMaskIntoConstraints="NO" id="FYl-J7-2bg">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="1EA-df-hc6"/>
+                                    <constraint firstAttribute="height" constant="100" id="ZHV-SM-H6q"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Régis-Robert" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dkj-c9-eGK">
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fJF-OA-McC">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b74-wa-XBm">
+                                <state key="normal" title="Log out"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4.7" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pze-K8-FXi">
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="26"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="FYl-J7-2bg" firstAttribute="leading" secondItem="B4S-W0-6Bf" secondAttribute="leading" constant="30" id="Dy6-NA-ewz"/>
+                            <constraint firstItem="b74-wa-XBm" firstAttribute="leading" secondItem="B4S-W0-6Bf" secondAttribute="leading" constant="30" id="DyW-5b-8Gx"/>
+                            <constraint firstItem="Dkj-c9-eGK" firstAttribute="leading" secondItem="FYl-J7-2bg" secondAttribute="trailing" constant="40" id="Fni-G6-6ca"/>
+                            <constraint firstItem="pze-K8-FXi" firstAttribute="leading" secondItem="FYl-J7-2bg" secondAttribute="trailing" constant="40" id="LCS-ZW-2sC"/>
+                            <constraint firstItem="fJF-OA-McC" firstAttribute="top" secondItem="b74-wa-XBm" secondAttribute="bottom" constant="8" id="PdE-g2-eC7"/>
+                            <constraint firstItem="Dkj-c9-eGK" firstAttribute="trailing" secondItem="b74-wa-XBm" secondAttribute="trailing" id="Qo2-Kf-9RF"/>
+                            <constraint firstItem="FYl-J7-2bg" firstAttribute="top" secondItem="L8q-Fb-4Fa" secondAttribute="bottom" constant="30" id="TVJ-6K-iZl"/>
+                            <constraint firstItem="pze-K8-FXi" firstAttribute="top" secondItem="Dkj-c9-eGK" secondAttribute="bottom" constant="8" symbolic="YES" id="Vj9-9b-o9f"/>
+                            <constraint firstItem="Dkj-c9-eGK" firstAttribute="trailing" secondItem="pze-K8-FXi" secondAttribute="trailing" id="ZWn-lz-UwC"/>
+                            <constraint firstItem="Dkj-c9-eGK" firstAttribute="top" secondItem="L8q-Fb-4Fa" secondAttribute="bottom" constant="57" id="cFb-Zh-mEe"/>
+                            <constraint firstItem="fJF-OA-McC" firstAttribute="centerY" secondItem="B4S-W0-6Bf" secondAttribute="centerY" id="eif-uP-xmb"/>
+                            <constraint firstItem="b74-wa-XBm" firstAttribute="centerX" secondItem="B4S-W0-6Bf" secondAttribute="centerX" id="pBG-wR-hfE"/>
+                            <constraint firstAttribute="trailing" secondItem="b74-wa-XBm" secondAttribute="trailing" constant="30" id="sOO-EP-CaX"/>
+                            <constraint firstItem="fJF-OA-McC" firstAttribute="centerX" secondItem="B4S-W0-6Bf" secondAttribute="centerX" id="ujr-sB-OWR"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="profilePicture" destination="FYl-J7-2bg" id="unw-u5-2k0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="q5f-kz-kH8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137" y="929"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -96,6 +162,14 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R4c-FV-XfU">
+                                <frame key="frameInset" minX="168" minY="72" width="39" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Menu"/>
+                                <connections>
+                                    <action selector="goToSettings:" destination="BYZ-38-t0r" eventType="touchUpInside" id="87b-tN-aEV"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -137,8 +211,8 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="OJu-MT-5EE"/>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tourner pour voir profils autour de soit" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zN0-Pf-dhc">
-                                <frame key="frameInset" minX="43" minY="590" width="310" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tourner pour voir les profils autour de soi" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zN0-Pf-dhc">
+                                <frame key="frameInset" minX="30" minY="593" width="314" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -162,5 +236,6 @@
     <resources>
         <image name="alissa" width="463" height="586"/>
         <image name="background" width="3840" height="2400"/>
+        <image name="regis" width="200" height="150"/>
     </resources>
 </document>

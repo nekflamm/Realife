@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Firebase
+import FBSDKLoginKit
 
 class ViewController: UIViewController {
 
@@ -14,9 +16,10 @@ class ViewController: UIViewController {
     @IBOutlet weak var viewStar: UIView!
     var screenSize = UIScreen.main.bounds
     var star: StarReview!
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationController?.navigationBar.isHidden = true;
         star = StarReview(frame: CGRect(x: 40, y: 0, width: screenSize.width - 80, height: 80))
         star.starMarginScale = 0.3
         star.allowEdit = true
@@ -34,6 +37,11 @@ class ViewController: UIViewController {
     
     func test() {
         print(star.value)
+    }
+
+    @IBAction func goToSettings(_ sender: UIButton) {
+        let new_vc = self.storyboard?.instantiateViewController(withIdentifier: "Settings") as! Settings
+        self.navigationController?.pushViewController(new_vc, animated: true)
     }
 }
 

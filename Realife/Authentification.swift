@@ -26,8 +26,8 @@ class Authentification: UIViewController, FBSDKLoginButtonDelegate {
         if (FBSDKAccessToken.current() != nil) {
             print("ALREADY SIGNED IN");
             loginFB.isHidden = false;
-//            let new_vc = self.storyboard?.instantiateViewController(withIdentifier: "MainScreen") as! ViewController
-//            self.navigationController?.pushViewController(new_vc, animated: true)
+            let new_vc = self.storyboard?.instantiateViewController(withIdentifier: "MainScreen") as! ViewController
+            self.navigationController?.pushViewController(new_vc, animated: true)
         }
         loginFB.readPermissions = ["public_profile", "email"];
     }
@@ -46,14 +46,13 @@ class Authentification: UIViewController, FBSDKLoginButtonDelegate {
         self.loginFB.isHidden = true;
         
         // Play loading animation
-        let alert = UIAlertController(title: nil, message: "Please wait...", preferredStyle: .alert)
-        alert.view.tintColor = UIColor.black
-        let loadingIndicator: UIActivityIndicatorView = UIActivityIndicatorView(frame: CGRect(x: 10, y: 5, width: 50, height: 50)) as UIActivityIndicatorView
-        loadingIndicator.hidesWhenStopped = true
-        loadingIndicator.activityIndicatorViewStyle = UIActivityIndicatorViewStyle.gray
-        loadingIndicator.startAnimating();
-        alert.view.addSubview(loadingIndicator)
-        present(alert, animated: true, completion: nil)
+        let activityIndicator = UIActivityIndicatorView(activityIndicatorStyle: UIActivityIndicatorViewStyle.gray)
+        activityIndicator.hidesWhenStopped = true;
+        activityIndicator.activityIndicatorViewStyle  = UIActivityIndicatorViewStyle.gray;
+        activityIndicator.center = view.center;
+        view.addSubview(activityIndicator)
+        activityIndicator.startAnimating()
+
         
         // Actually begin to log in
         let credential = FIRFacebookAuthProvider.credential(withAccessToken: FBSDKAccessToken.current().tokenString)
@@ -87,7 +86,7 @@ class Authentification: UIViewController, FBSDKLoginButtonDelegate {
                 
                 self.createUser(email: email!, lastName: lastName, firstName: firstName, photoUrl: photoUrl!.absoluteString)
                 self.loginFB.isHidden = false;
-                self.dismiss(animated: false, completion: nil)
+                activityIndicator.stopAnimating()
                 let new_vc = self.storyboard?.instantiateViewController(withIdentifier: "MainScreen") as! ViewController
                 self.navigationController?.pushViewController(new_vc, animated: true)
 

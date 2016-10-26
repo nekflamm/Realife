@@ -30,6 +30,7 @@ class Authentification: UIViewController, FBSDKLoginButtonDelegate {
             self.navigationController?.pushViewController(new_vc, animated: true)
         }
         loginFB.readPermissions = ["public_profile", "email"];
+        NotificationCenter.default.addObserver(self, selector: Selector(("logOutClickedFromSettings:")), name: NSNotification.Name(rawValue: "LogOutFromSettingsNotif"), object: nil)
     }
 
     override func didReceiveMemoryWarning() {
@@ -109,7 +110,7 @@ class Authentification: UIViewController, FBSDKLoginButtonDelegate {
     func loginButtonDidLogOut(_ loginButton: FBSDKLoginButton!) {
         try! FIRAuth.auth()!.signOut()
     }
-    
+
     /*
     // MARK: - Navigation
 

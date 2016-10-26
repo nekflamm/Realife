@@ -7,13 +7,14 @@
 //
 
 import UIKit
+import Firebase
+import FBSDKLoginKit
 
 class Settings: UIViewController {
 
     // MARK: Properties
     @IBOutlet weak var profilePicture: UIImageView!
 
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -30,6 +31,17 @@ class Settings: UIViewController {
     }
     
 
+    @IBAction func LogOutFromSettings(_ sender: AnyObject) {
+        try! FIRAuth.auth()!.signOut()
+        FBSDKLoginManager().logOut()
+        let viewControllers: [UIViewController] = self.navigationController!.viewControllers
+        for aViewController in viewControllers {
+            if (aViewController is Authentification){
+                self.navigationController!.popToViewController(aViewController, animated: true)
+            }
+        }
+    }
+    
     /*
     // MARK: - Navigation
 
